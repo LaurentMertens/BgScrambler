@@ -29,6 +29,7 @@ class Scrambler:
         # Open image
         with open(img_path, 'rb') as f:
             img = Image.open(f).convert('RGB')
+            img.save('test_image_unsplash_2.jpg')
 
         # Process image with YOLOv11
         w, h = img.size
@@ -192,4 +193,4 @@ if __name__ == '__main__':
     # Parse image
     # block_size: size of the blocks (or patches if you prefer) that will be randomly swapped around
     # blur_radius: size of the blur to be applied to the scrambled part
-    res = proc.process_img(_img, block_size=3, blur_radius=0, b_show=True)
+    res = proc.process_img(_img, block_size=3, blur_radius=0, b_show=True, out_file=None)

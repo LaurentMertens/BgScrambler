@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+bg_scrambler/res_image.jpg
+bg_scrambler/scrambler.py
+bg_scrambler/test_image_unsplash.jpg
+bg_scrambler.egg-info/PKG-INFO
+bg_scrambler.egg-info/SOURCES.txt
+bg_scrambler.egg-info/dependency_links.txt
+bg_scrambler.egg-info/requires.txt
+bg_scrambler.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+/env/**
+/env
+/.idea/**
+/.idea
+__pycache__
+*.pt

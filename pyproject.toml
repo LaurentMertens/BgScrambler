@@ -1,0 +1,37 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ['bg_scrambler']
+
+[tool.setuptools.dynamic]
+version = {attr = "bg_scrambler.VERSION"}
+readme = {file = ["README.md"]}
+
+[project]
+name = "bg_scrambler"
+version = "1.0.0"
+description = "A simple tool to scramble the background (=anything but people) in images."
+readme = "README.md"
+authors = [{ name = "Laurent Mertens", email = "contact@laurentmertens.com" }]
+maintainers = [{ name = "Laurent Mertens", email = "contact@laurentmertens.com" }]
+license = 'MIT'
+license-files = ["LICENSE.md"]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["Ultralytics", "Computer Vision", "Image Processing", "YOLO"]
+dependencies = [
+    'numpy >= 2.2',
+    'Pillow >= 9',
+    'ultralytics >= 8.3'
+]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/LaurentMertens/BgScrambler"
+Changelog = "https://github.com/LaurentMertens/BgScrambler/blob/master/CHANGELOG.md"
+
+[project.scripts]

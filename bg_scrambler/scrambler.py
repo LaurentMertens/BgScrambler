@@ -5,6 +5,7 @@
 import random
 
 import numpy as np
+import torch
 from PIL import Image, ImageFilter
 from ultralytics import YOLO
 
@@ -30,7 +31,12 @@ class Scrambler:
             img = Image.open(f).convert('RGB')
 
         # Process image with YOLOv11
-        res = self.model(img_path)[0]
+        w, h = img.size
+        _imgsz = w if w > h else h
+        if _imgsz > 2016:
+            _imgsz = 2016
+        with torch.no_grad():
+            res = self.model(img_path, imgsz=_imgsz)[0]
 
         # Extract people
         mask_people = self._extract_people(res)

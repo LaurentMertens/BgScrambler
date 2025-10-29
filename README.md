@@ -18,6 +18,9 @@ To install this application, either clone this repository, or simply install usi
 ```pip install bg-scrambler```.
 
 ## Usage
+The application will keep the original image size, if its largest side is a multiple of 32 (a requisite of YOLOv11),
+up till sizes of 2016px. If the largest side exceeds 2016, the image will be resized so that this side becomes 2016px.
+
 Note that the scrambler returns the processed image. By default, the output is NOT saved to disk.\
 To save the output (i.e., the processed image) to disk, specify ```out_file='path/to/output.jpg'``` (or ```png```) when calling ```process_img()```.
 

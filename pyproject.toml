@@ -11,7 +11,7 @@ readme = {file = ["README.md"]}
 
 [project]
 name = "bg_scrambler"
-version = "1.0.0"
+version = "1.0.1"
 description = "A simple tool to scramble the background (=anything but people) in images."
 readme = "README.md"
 authors = [{ name = "Laurent Mertens", email = "contact@laurentmertens.com" }]

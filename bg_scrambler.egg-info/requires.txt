@@ -1,3 +1,0 @@
-numpy>=2.2
-Pillow>=9
-ultralytics>=8.3

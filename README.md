@@ -4,14 +4,13 @@ This package contains a simple tool that allows to scramble the background of im
 As an example, it turns this image:
 
 <div align="center">
-<img src="./bg_scrambler/test_image_unsplash.jpg" width="640px">
+<img src="https://github.com/LaurentMertens/BgScrambler/blob/main/bg_scrambler/test_image_unsplash.jpg" width="640px">
 </div>
 
 into this image:
 <div align="center">
-<img src="./bg_scrambler/res_image.jpg" width="640px">
+<img src="https://github.com/LaurentMertens/BgScrambler/raw/main/bg_scrambler/res_image.jpg" width="640px">
 </div>
-
 
 ## Installation
 To install this application, either clone this repository, or simply install using
